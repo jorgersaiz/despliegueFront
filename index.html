@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Game Search</title>
+    <link rel="stylesheet" href="./index.css">
+
+<body id="hola">
+    <header>
+        <h1>Video Game Search</h1>
+        <h2 style="cursor: pointer;" onclick="redirectToForm()">Add a new Game</h2>
+    </header>
+    <main>
+        <div id="filters">
+            <h2>Filters</h2>
+            <label for="search"><i class="fas fa-search"></i> Search: </label>
+            <input type="text" id="search">
+            <label for="platform"><i class="fas fa-gamepad"></i> Platform: </label>
+            <select id="platform">
+                <option value="all">All</option>
+                <option value="ps4">PS4</option>
+                <option value="xbox">Xbox</option>
+                <!-- Add more platform options here -->
+            </select>
+            <label for="genre"><i class="fas fa-gamepad"></i> Genre: </label>
+            <select id="genre">
+                <option value="all">All</option>
+                <option value="action">Action</option>
+                <option value="adventure">Adventure</option>
+                <option value="science-fiction">Science-fiction</option>
+                <!-- Add more genre options here -->
+            </select>
+            <button id="apply-filters" onclick="filterGames()"><i class="fas fa-filter"></i> Apply Filters</button>
+        </div>
+        
+        <div id="results">
+            <h2>Search Results</h2>
+            <ul id="game-list">
+                <!-- Game results will be displayed here -->
+            </ul>
+        </div>
+
+        <form id="new-game">
+            <h2>Add a new game</h2>
+            <label for="name"> Name: </label>
+            <input type="text" id="name">
+            <label for="platformNew"> Platform: </label>
+            <select id="platformNew">
+                <option value="PS4">PS4</option>
+                <option value="Xbox">Xbox</option>
+                <!-- Add more platform options here -->
+            </select>
+            <label for="genreNew"> Genre: </label>
+            <select id="genreNew">
+                <option value="Action">Action</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Science-fiction">Science-fiction</option>
+                <!-- Add more genre options here -->
+            </select>
+            <button type="button" id="add-game" onclick="addNewGame()">Add new game</button>
+        </form>
+    </main>
+    <script src="./index.js"></script>
+    <script src="https://kit.fontawesome.com/c882247b7c.js" crossorigin="anonymous"></script>
+</body>
+</html>

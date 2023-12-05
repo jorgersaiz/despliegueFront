@@ -1,0 +1,108 @@
+/* Main color variables */
+:root {
+    --main-color: #8a2be2; /* Purple main color */
+    --secondary-color: #00b0ff; /* Blue secondary color */
+    --text-color: #333; /* Dark gray text color */
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--main-color); /* Main color for header */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* Filters */
+#filters, #new-game {
+    background-color: var(--main-color); /* Main color for filters */
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Input and select styles */
+input[type="text"],
+select {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 2px solid var(--secondary-color); /* Secondary color for borders */
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    transition: border-color 0.2s ease-in-out;
+    font-size: 1rem;
+    color: var(--text-color);
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="var(--text-color)" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 0.7em top 50%;
+    cursor: pointer;
+    padding-right: 0;
+}
+
+/* Style select dropdown options */
+select option {
+    background-color: #fff;
+    color: var(--text-color);
+}
+
+/* Button styles */
+button {
+    padding: 0.5rem 1rem;
+    background-color: var(--secondary-color); /* Secondary color for buttons */
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #0091cc;
+}
+
+/* Results */
+#results {
+    margin-top: 1rem;
+}
+
+#game-list {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease-in-out;
+}
+
+li:hover {
+    background-color: #f2f2f2;
+}
+
+#new-game {
+    display: none;
+}
